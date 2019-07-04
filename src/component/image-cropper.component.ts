@@ -129,10 +129,7 @@ export class ImageCropperComponent implements OnChanges {
             width: 0,
             height: 0
         };
-        this.cropper.x1 = -100;
-        this.cropper.y1 = -100;
-        this.cropper.x2 = 10000;
-        this.cropper.y2 = 10000;
+        this.resizeCropperPosition();
     }
 
     private loadImageFile(file: File): void {
